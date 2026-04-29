@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+  
+  body, html {
+    background-color: white !important;
+    color: black !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Force elements to be clear and readable */
+  * {
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-image: none !important;
+    background-color: transparent !important;
+  }
+
+  /* Keep borders but make them grey */
+  .border, [class*="border-"] {
+    border-color: #cccccc !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+  }
+
+  /* Prevent page breaks inside important sections */
+  .rounded-\[2rem\], .rounded-xl, .rounded-2xl {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid #ccc !important;
+    margin-bottom: 2rem !important;
+    padding: 1.5rem !important;
+  }
+
+  /* Ensure flex and grids wrap properly */
+  .grid {
+    display: block !important;
+  }
+  
+  /* Hide specific elements globally based on utility */
+  .print\:hidden {
+    display: none !important;
+  }
+}
