@@ -12,7 +12,7 @@ Instead of relying on a single AI model, the system orchestrates multiple specia
 
 ---
 
-## 🚑 The Problem
+##  The Problem
 
 Modern AI healthcare tools often:
 - provide a single answer without explanation
@@ -82,7 +82,7 @@ Explainable Clinical Report
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Next.js
 - TypeScript
