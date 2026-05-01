@@ -96,7 +96,7 @@ Explainable Clinical Report
 
 ##  Demo
 
-https://diagora-4lo3fuxad-worodhazims-projects.vercel.app/
+[https://diagora-4lo3fuxad-worodhazims-projects.vercel.app/](https://diagora-ai.vercel.app/)
 
 ---
 
